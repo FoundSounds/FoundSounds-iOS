@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (4.7.3)
+  - DeviceGuru (5.0.0)
+  - KeychainSwift (13.0.0)
+  - KMPlaceholderTextView (1.4.0)
+  - ReachabilitySwift (4.3.0)
+  - SwiftLint (0.27.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7.3)
+  - DeviceGuru (~> 5.0.0)
+  - KeychainSwift (~> 13.0)
+  - KMPlaceholderTextView (~> 1.4.0)
+  - ReachabilitySwift (~> 4.3.0)
+  - SwiftLint (~> 0.27.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - DeviceGuru
+    - KeychainSwift
+    - KMPlaceholderTextView
+    - ReachabilitySwift
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  DeviceGuru: 13a60290a29142261c9924714ea2c57c3f48d16b
+  KeychainSwift: 23d6c16cbc33f20fafa30c3d783241b4b87d998c
+  KMPlaceholderTextView: 2206c3df39979e9396e2d96fa9f427a8951121b0
+  ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
+  SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
+
+PODFILE CHECKSUM: 7f60473b2aa4dc671c94827500de40fa1ed06d72
+
+COCOAPODS: 1.5.3
