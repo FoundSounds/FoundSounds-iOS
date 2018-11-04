@@ -1,0 +1,24 @@
+# https://docs.codecov.io/v4.3.6/docs/commit-status#section-project-status
+
+codecov:
+  bot: djensenius
+coverage:
+  status:
+    changes: off
+    patch:
+      &cov
+      default:
+        target: "80%"    # Use the coverage from the base commit
+        threshold: "20%"    # Allow the coverage to drop by X%, and posting a success status.
+        base: auto
+        if_no_uploads: error
+        if_not_found: success
+        if_ci_failed: error
+    project: *cov
+comment:
+  layout: "reach, diff, flags, files"
+  behavior: default
+  require_changes: false  # if true: only post the comment if coverage changes
+  require_base: no        # [yes :: must have a base report to post]
+  require_head: yes       # [yes :: must have a head report to post]
+  branches: null
