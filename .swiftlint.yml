@@ -1,0 +1,7 @@
+disabled_rules:
+  # Warnings
+  - file_length
+  - type_body_length
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Carthage
+  - Pods
