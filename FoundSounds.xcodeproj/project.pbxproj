@@ -15,6 +15,26 @@
 		63A0CED1218F7F9400013935 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A0CECF218F7F9400013935 /* LaunchScreen.storyboard */; };
 		63A0CEDC218F7F9400013935 /* FoundSoundsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0CEDB218F7F9400013935 /* FoundSoundsTests.swift */; };
 		63A0CEE7218F7F9400013935 /* FoundSoundsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0CEE6218F7F9400013935 /* FoundSoundsUITests.swift */; };
+		63A0CEFA218F7FAB00013935 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A0CEF8218F7FAB00013935 /* Interface.storyboard */; };
+		63A0CEFC218F7FAC00013935 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63A0CEFB218F7FAC00013935 /* Assets.xcassets */; };
+		63A0CF03218F7FAC00013935 /* FoundSounds Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 63A0CF02218F7FAC00013935 /* FoundSounds Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		63A0CF08218F7FAC00013935 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0CF07218F7FAC00013935 /* InterfaceController.swift */; };
+		63A0CF0A218F7FAC00013935 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0CF09218F7FAC00013935 /* ExtensionDelegate.swift */; };
+		63A0CF0C218F7FAC00013935 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0CF0B218F7FAC00013935 /* NotificationController.swift */; };
+		63A0CF0E218F7FAC00013935 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0CF0D218F7FAC00013935 /* ComplicationController.swift */; };
+		63A0CF10218F7FAD00013935 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63A0CF0F218F7FAD00013935 /* Assets.xcassets */; };
+		63A0CF15218F7FAD00013935 /* FoundSounds Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 63A0CEF6218F7FAB00013935 /* FoundSounds Watch.app */; };
+		63A0CF25218F7FC500013935 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0CF24218F7FC500013935 /* AppDelegate.swift */; };
+		63A0CF27218F7FC500013935 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0CF26218F7FC500013935 /* FirstViewController.swift */; };
+		63A0CF29218F7FC500013935 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0CF28218F7FC500013935 /* SecondViewController.swift */; };
+		63A0CF2C218F7FC500013935 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A0CF2A218F7FC500013935 /* Main.storyboard */; };
+		63A0CF2E218F7FC700013935 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63A0CF2D218F7FC700013935 /* Assets.xcassets */; };
+		63A0CF39218F7FC700013935 /* FoundSounds_TVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0CF38218F7FC700013935 /* FoundSounds_TVTests.swift */; };
+		63A0CF44218F7FC700013935 /* FoundSounds_TVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0CF43218F7FC700013935 /* FoundSounds_TVUITests.swift */; };
+		63A0CF56218F7FF300013935 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A0CF55218F7FF300013935 /* NotificationCenter.framework */; };
+		63A0CF59218F7FF300013935 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0CF58218F7FF300013935 /* TodayViewController.swift */; };
+		63A0CF5C218F7FF300013935 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A0CF5A218F7FF300013935 /* MainInterface.storyboard */; };
+		63A0CF60218F7FF300013935 /* FoundSounds Today View.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 63A0CF53218F7FF300013935 /* FoundSounds Today View.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +52,78 @@
 			remoteGlobalIDString = 63A0CEC0218F7F9300013935;
 			remoteInfo = FoundSounds;
 		};
+		63A0CF04218F7FAC00013935 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63A0CEB9218F7F9300013935 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63A0CF01218F7FAC00013935;
+			remoteInfo = "FoundSounds Watch Extension";
+		};
+		63A0CF13218F7FAD00013935 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63A0CEB9218F7F9300013935 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63A0CEF5218F7FAB00013935;
+			remoteInfo = "FoundSounds Watch";
+		};
+		63A0CF35218F7FC700013935 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63A0CEB9218F7F9300013935 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63A0CF21218F7FC500013935;
+			remoteInfo = "FoundSounds TV";
+		};
+		63A0CF40218F7FC700013935 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63A0CEB9218F7F9300013935 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63A0CF21218F7FC500013935;
+			remoteInfo = "FoundSounds TV";
+		};
+		63A0CF5E218F7FF300013935 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63A0CEB9218F7F9300013935 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63A0CF52218F7FF300013935;
+			remoteInfo = "FoundSounds Today View";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		63A0CF19218F7FAD00013935 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				63A0CF03218F7FAC00013935 /* FoundSounds Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A0CF1D218F7FAD00013935 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				63A0CF15218F7FAD00013935 /* FoundSounds Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A0CF64218F7FF300013935 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				63A0CF60218F7FF300013935 /* FoundSounds Today View.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		63A0CEC1218F7F9300013935 /* FoundSounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoundSounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +140,36 @@
 		63A0CEE2218F7F9400013935 /* FoundSoundsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoundSoundsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A0CEE6218F7F9400013935 /* FoundSoundsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundSoundsUITests.swift; sourceTree = "<group>"; };
 		63A0CEE8218F7F9400013935 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63A0CEF6218F7FAB00013935 /* FoundSounds Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FoundSounds Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63A0CEF9218F7FAB00013935 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		63A0CEFB218F7FAC00013935 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63A0CEFD218F7FAC00013935 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63A0CF02218F7FAC00013935 /* FoundSounds Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FoundSounds Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63A0CF07218F7FAC00013935 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		63A0CF09218F7FAC00013935 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		63A0CF0B218F7FAC00013935 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		63A0CF0D218F7FAC00013935 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		63A0CF0F218F7FAD00013935 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63A0CF11218F7FAD00013935 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63A0CF12218F7FAD00013935 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		63A0CF22218F7FC500013935 /* FoundSounds TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FoundSounds TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63A0CF24218F7FC500013935 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		63A0CF26218F7FC500013935 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		63A0CF28218F7FC500013935 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		63A0CF2B218F7FC500013935 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63A0CF2D218F7FC700013935 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63A0CF2F218F7FC700013935 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63A0CF34218F7FC700013935 /* FoundSounds TVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FoundSounds TVTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63A0CF38218F7FC700013935 /* FoundSounds_TVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundSounds_TVTests.swift; sourceTree = "<group>"; };
+		63A0CF3A218F7FC700013935 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63A0CF3F218F7FC700013935 /* FoundSounds TVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FoundSounds TVUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63A0CF43218F7FC700013935 /* FoundSounds_TVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundSounds_TVUITests.swift; sourceTree = "<group>"; };
+		63A0CF45218F7FC700013935 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63A0CF53218F7FF300013935 /* FoundSounds Today View.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FoundSounds Today View.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63A0CF55218F7FF300013935 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		63A0CF58218F7FF300013935 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		63A0CF5B218F7FF300013935 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		63A0CF5D218F7FF300013935 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +194,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		63A0CEFF218F7FAC00013935 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A0CF1F218F7FC500013935 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A0CF31218F7FC700013935 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A0CF3C218F7FC700013935 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A0CF50218F7FF300013935 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A0CF56218F7FF300013935 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +239,13 @@
 				63A0CEC3218F7F9300013935 /* FoundSounds */,
 				63A0CEDA218F7F9400013935 /* FoundSoundsTests */,
 				63A0CEE5218F7F9400013935 /* FoundSoundsUITests */,
+				63A0CEF7218F7FAB00013935 /* FoundSounds Watch */,
+				63A0CF06218F7FAC00013935 /* FoundSounds Watch Extension */,
+				63A0CF23218F7FC500013935 /* FoundSounds TV */,
+				63A0CF37218F7FC700013935 /* FoundSounds TVTests */,
+				63A0CF42218F7FC700013935 /* FoundSounds TVUITests */,
+				63A0CF57218F7FF300013935 /* FoundSounds Today View */,
+				63A0CF54218F7FF300013935 /* Frameworks */,
 				63A0CEC2218F7F9300013935 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +256,12 @@
 				63A0CEC1218F7F9300013935 /* FoundSounds.app */,
 				63A0CED7218F7F9400013935 /* FoundSoundsTests.xctest */,
 				63A0CEE2218F7F9400013935 /* FoundSoundsUITests.xctest */,
+				63A0CEF6218F7FAB00013935 /* FoundSounds Watch.app */,
+				63A0CF02218F7FAC00013935 /* FoundSounds Watch Extension.appex */,
+				63A0CF22218F7FC500013935 /* FoundSounds TV.app */,
+				63A0CF34218F7FC700013935 /* FoundSounds TVTests.xctest */,
+				63A0CF3F218F7FC700013935 /* FoundSounds TVUITests.xctest */,
+				63A0CF53218F7FF300013935 /* FoundSounds Today View.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +298,79 @@
 			path = FoundSoundsUITests;
 			sourceTree = "<group>";
 		};
+		63A0CEF7218F7FAB00013935 /* FoundSounds Watch */ = {
+			isa = PBXGroup;
+			children = (
+				63A0CEF8218F7FAB00013935 /* Interface.storyboard */,
+				63A0CEFB218F7FAC00013935 /* Assets.xcassets */,
+				63A0CEFD218F7FAC00013935 /* Info.plist */,
+			);
+			path = "FoundSounds Watch";
+			sourceTree = "<group>";
+		};
+		63A0CF06218F7FAC00013935 /* FoundSounds Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				63A0CF07218F7FAC00013935 /* InterfaceController.swift */,
+				63A0CF09218F7FAC00013935 /* ExtensionDelegate.swift */,
+				63A0CF0B218F7FAC00013935 /* NotificationController.swift */,
+				63A0CF0D218F7FAC00013935 /* ComplicationController.swift */,
+				63A0CF0F218F7FAD00013935 /* Assets.xcassets */,
+				63A0CF11218F7FAD00013935 /* Info.plist */,
+				63A0CF12218F7FAD00013935 /* PushNotificationPayload.apns */,
+			);
+			path = "FoundSounds Watch Extension";
+			sourceTree = "<group>";
+		};
+		63A0CF23218F7FC500013935 /* FoundSounds TV */ = {
+			isa = PBXGroup;
+			children = (
+				63A0CF24218F7FC500013935 /* AppDelegate.swift */,
+				63A0CF26218F7FC500013935 /* FirstViewController.swift */,
+				63A0CF28218F7FC500013935 /* SecondViewController.swift */,
+				63A0CF2A218F7FC500013935 /* Main.storyboard */,
+				63A0CF2D218F7FC700013935 /* Assets.xcassets */,
+				63A0CF2F218F7FC700013935 /* Info.plist */,
+			);
+			path = "FoundSounds TV";
+			sourceTree = "<group>";
+		};
+		63A0CF37218F7FC700013935 /* FoundSounds TVTests */ = {
+			isa = PBXGroup;
+			children = (
+				63A0CF38218F7FC700013935 /* FoundSounds_TVTests.swift */,
+				63A0CF3A218F7FC700013935 /* Info.plist */,
+			);
+			path = "FoundSounds TVTests";
+			sourceTree = "<group>";
+		};
+		63A0CF42218F7FC700013935 /* FoundSounds TVUITests */ = {
+			isa = PBXGroup;
+			children = (
+				63A0CF43218F7FC700013935 /* FoundSounds_TVUITests.swift */,
+				63A0CF45218F7FC700013935 /* Info.plist */,
+			);
+			path = "FoundSounds TVUITests";
+			sourceTree = "<group>";
+		};
+		63A0CF54218F7FF300013935 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63A0CF55218F7FF300013935 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63A0CF57218F7FF300013935 /* FoundSounds Today View */ = {
+			isa = PBXGroup;
+			children = (
+				63A0CF58218F7FF300013935 /* TodayViewController.swift */,
+				63A0CF5A218F7FF300013935 /* MainInterface.storyboard */,
+				63A0CF5D218F7FF300013935 /* Info.plist */,
+			);
+			path = "FoundSounds Today View";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,10 +381,14 @@
 				63A0CEBD218F7F9300013935 /* Sources */,
 				63A0CEBE218F7F9300013935 /* Frameworks */,
 				63A0CEBF218F7F9300013935 /* Resources */,
+				63A0CF1D218F7FAD00013935 /* Embed Watch Content */,
+				63A0CF64218F7FF300013935 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				63A0CF14218F7FAD00013935 /* PBXTargetDependency */,
+				63A0CF5F218F7FF300013935 /* PBXTargetDependency */,
 			);
 			name = FoundSounds;
 			productName = FoundSounds;
@@ -184,6 +431,110 @@
 			productReference = 63A0CEE2218F7F9400013935 /* FoundSoundsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		63A0CEF5218F7FAB00013935 /* FoundSounds Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63A0CF1A218F7FAD00013935 /* Build configuration list for PBXNativeTarget "FoundSounds Watch" */;
+			buildPhases = (
+				63A0CEF4218F7FAB00013935 /* Resources */,
+				63A0CF19218F7FAD00013935 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63A0CF05218F7FAC00013935 /* PBXTargetDependency */,
+			);
+			name = "FoundSounds Watch";
+			productName = "FoundSounds Watch";
+			productReference = 63A0CEF6218F7FAB00013935 /* FoundSounds Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		63A0CF01218F7FAC00013935 /* FoundSounds Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63A0CF16218F7FAD00013935 /* Build configuration list for PBXNativeTarget "FoundSounds Watch Extension" */;
+			buildPhases = (
+				63A0CEFE218F7FAC00013935 /* Sources */,
+				63A0CEFF218F7FAC00013935 /* Frameworks */,
+				63A0CF00218F7FAC00013935 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FoundSounds Watch Extension";
+			productName = "FoundSounds Watch Extension";
+			productReference = 63A0CF02218F7FAC00013935 /* FoundSounds Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		63A0CF21218F7FC500013935 /* FoundSounds TV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63A0CF46218F7FC700013935 /* Build configuration list for PBXNativeTarget "FoundSounds TV" */;
+			buildPhases = (
+				63A0CF1E218F7FC500013935 /* Sources */,
+				63A0CF1F218F7FC500013935 /* Frameworks */,
+				63A0CF20218F7FC500013935 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FoundSounds TV";
+			productName = "FoundSounds TV";
+			productReference = 63A0CF22218F7FC500013935 /* FoundSounds TV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63A0CF33218F7FC700013935 /* FoundSounds TVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63A0CF49218F7FC700013935 /* Build configuration list for PBXNativeTarget "FoundSounds TVTests" */;
+			buildPhases = (
+				63A0CF30218F7FC700013935 /* Sources */,
+				63A0CF31218F7FC700013935 /* Frameworks */,
+				63A0CF32218F7FC700013935 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63A0CF36218F7FC700013935 /* PBXTargetDependency */,
+			);
+			name = "FoundSounds TVTests";
+			productName = "FoundSounds TVTests";
+			productReference = 63A0CF34218F7FC700013935 /* FoundSounds TVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		63A0CF3E218F7FC700013935 /* FoundSounds TVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63A0CF4C218F7FC700013935 /* Build configuration list for PBXNativeTarget "FoundSounds TVUITests" */;
+			buildPhases = (
+				63A0CF3B218F7FC700013935 /* Sources */,
+				63A0CF3C218F7FC700013935 /* Frameworks */,
+				63A0CF3D218F7FC700013935 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63A0CF41218F7FC700013935 /* PBXTargetDependency */,
+			);
+			name = "FoundSounds TVUITests";
+			productName = "FoundSounds TVUITests";
+			productReference = 63A0CF3F218F7FC700013935 /* FoundSounds TVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		63A0CF52218F7FF300013935 /* FoundSounds Today View */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63A0CF61218F7FF300013935 /* Build configuration list for PBXNativeTarget "FoundSounds Today View" */;
+			buildPhases = (
+				63A0CF4F218F7FF300013935 /* Sources */,
+				63A0CF50218F7FF300013935 /* Frameworks */,
+				63A0CF51218F7FF300013935 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FoundSounds Today View";
+			productName = "FoundSounds Today View";
+			productReference = 63A0CF53218F7FF300013935 /* FoundSounds Today View.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,6 +556,26 @@
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = 63A0CEC0218F7F9300013935;
 					};
+					63A0CEF5218F7FAB00013935 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					63A0CF01218F7FAC00013935 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					63A0CF21218F7FC500013935 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					63A0CF33218F7FC700013935 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 63A0CF21218F7FC500013935;
+					};
+					63A0CF3E218F7FC700013935 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 63A0CF21218F7FC500013935;
+					};
+					63A0CF52218F7FF300013935 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 				};
 			};
 			buildConfigurationList = 63A0CEBC218F7F9300013935 /* Build configuration list for PBXProject "FoundSounds" */;
@@ -223,6 +594,12 @@
 				63A0CEC0218F7F9300013935 /* FoundSounds */,
 				63A0CED6218F7F9400013935 /* FoundSoundsTests */,
 				63A0CEE1218F7F9400013935 /* FoundSoundsUITests */,
+				63A0CEF5218F7FAB00013935 /* FoundSounds Watch */,
+				63A0CF01218F7FAC00013935 /* FoundSounds Watch Extension */,
+				63A0CF21218F7FC500013935 /* FoundSounds TV */,
+				63A0CF33218F7FC700013935 /* FoundSounds TVTests */,
+				63A0CF3E218F7FC700013935 /* FoundSounds TVUITests */,
+				63A0CF52218F7FF300013935 /* FoundSounds Today View */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +626,54 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A0CEF4218F7FAB00013935 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A0CEFC218F7FAC00013935 /* Assets.xcassets in Resources */,
+				63A0CEFA218F7FAB00013935 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A0CF00218F7FAC00013935 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A0CF10218F7FAD00013935 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A0CF20218F7FC500013935 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A0CF2E218F7FC700013935 /* Assets.xcassets in Resources */,
+				63A0CF2C218F7FC500013935 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A0CF32218F7FC700013935 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A0CF3D218F7FC700013935 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A0CF51218F7FF300013935 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A0CF5C218F7FF300013935 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +706,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		63A0CEFE218F7FAC00013935 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A0CF0C218F7FAC00013935 /* NotificationController.swift in Sources */,
+				63A0CF0E218F7FAC00013935 /* ComplicationController.swift in Sources */,
+				63A0CF0A218F7FAC00013935 /* ExtensionDelegate.swift in Sources */,
+				63A0CF08218F7FAC00013935 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A0CF1E218F7FC500013935 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A0CF29218F7FC500013935 /* SecondViewController.swift in Sources */,
+				63A0CF25218F7FC500013935 /* AppDelegate.swift in Sources */,
+				63A0CF27218F7FC500013935 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A0CF30218F7FC700013935 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A0CF39218F7FC700013935 /* FoundSounds_TVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A0CF3B218F7FC700013935 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A0CF44218F7FC700013935 /* FoundSounds_TVUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A0CF4F218F7FF300013935 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A0CF59218F7FF300013935 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,6 +763,31 @@
 			isa = PBXTargetDependency;
 			target = 63A0CEC0218F7F9300013935 /* FoundSounds */;
 			targetProxy = 63A0CEE3218F7F9400013935 /* PBXContainerItemProxy */;
+		};
+		63A0CF05218F7FAC00013935 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63A0CF01218F7FAC00013935 /* FoundSounds Watch Extension */;
+			targetProxy = 63A0CF04218F7FAC00013935 /* PBXContainerItemProxy */;
+		};
+		63A0CF14218F7FAD00013935 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63A0CEF5218F7FAB00013935 /* FoundSounds Watch */;
+			targetProxy = 63A0CF13218F7FAD00013935 /* PBXContainerItemProxy */;
+		};
+		63A0CF36218F7FC700013935 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63A0CF21218F7FC500013935 /* FoundSounds TV */;
+			targetProxy = 63A0CF35218F7FC700013935 /* PBXContainerItemProxy */;
+		};
+		63A0CF41218F7FC700013935 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63A0CF21218F7FC500013935 /* FoundSounds TV */;
+			targetProxy = 63A0CF40218F7FC700013935 /* PBXContainerItemProxy */;
+		};
+		63A0CF5F218F7FF300013935 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63A0CF52218F7FF300013935 /* FoundSounds Today View */;
+			targetProxy = 63A0CF5E218F7FF300013935 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -311,6 +806,30 @@
 				63A0CED0218F7F9400013935 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		63A0CEF8218F7FAB00013935 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63A0CEF9218F7FAB00013935 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		63A0CF2A218F7FC500013935 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63A0CF2B218F7FC500013935 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		63A0CF5A218F7FF300013935 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63A0CF5B218F7FF300013935 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -435,6 +954,7 @@
 		63A0CEEC218F7F9400013935 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9JALHNGRBQ;
@@ -453,6 +973,7 @@
 		63A0CEED218F7F9400013935 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9JALHNGRBQ;
@@ -550,6 +1071,258 @@
 			};
 			name = Release;
 		};
+		63A0CF17218F7FAD00013935 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JALHNGRBQ;
+				INFOPLIST_FILE = "FoundSounds Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.davidjensenius.FoundSounds.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		63A0CF18218F7FAD00013935 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JALHNGRBQ;
+				INFOPLIST_FILE = "FoundSounds Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.davidjensenius.FoundSounds.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		63A0CF1B218F7FAD00013935 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JALHNGRBQ;
+				IBSC_MODULE = FoundSounds_Watch_Extension;
+				INFOPLIST_FILE = "FoundSounds Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = org.davidjensenius.FoundSounds.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		63A0CF1C218F7FAD00013935 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JALHNGRBQ;
+				IBSC_MODULE = FoundSounds_Watch_Extension;
+				INFOPLIST_FILE = "FoundSounds Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = org.davidjensenius.FoundSounds.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		63A0CF47218F7FC700013935 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JALHNGRBQ;
+				INFOPLIST_FILE = "FoundSounds TV/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.davidjensenius.FoundSounds-TV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.1;
+			};
+			name = Debug;
+		};
+		63A0CF48218F7FC700013935 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JALHNGRBQ;
+				INFOPLIST_FILE = "FoundSounds TV/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.davidjensenius.FoundSounds-TV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.1;
+			};
+			name = Release;
+		};
+		63A0CF4A218F7FC700013935 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JALHNGRBQ;
+				INFOPLIST_FILE = "FoundSounds TVTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.davidjensenius.FoundSounds-TVTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoundSounds TV.app/FoundSounds TV";
+				TVOS_DEPLOYMENT_TARGET = 12.1;
+			};
+			name = Debug;
+		};
+		63A0CF4B218F7FC700013935 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JALHNGRBQ;
+				INFOPLIST_FILE = "FoundSounds TVTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.davidjensenius.FoundSounds-TVTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoundSounds TV.app/FoundSounds TV";
+				TVOS_DEPLOYMENT_TARGET = 12.1;
+			};
+			name = Release;
+		};
+		63A0CF4D218F7FC700013935 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JALHNGRBQ;
+				INFOPLIST_FILE = "FoundSounds TVUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.davidjensenius.FoundSounds-TVUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = "FoundSounds TV";
+				TVOS_DEPLOYMENT_TARGET = 12.1;
+			};
+			name = Debug;
+		};
+		63A0CF4E218F7FC700013935 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JALHNGRBQ;
+				INFOPLIST_FILE = "FoundSounds TVUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.davidjensenius.FoundSounds-TVUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = "FoundSounds TV";
+				TVOS_DEPLOYMENT_TARGET = 12.1;
+			};
+			name = Release;
+		};
+		63A0CF62218F7FF300013935 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JALHNGRBQ;
+				INFOPLIST_FILE = "FoundSounds Today View/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.davidjensenius.FoundSounds.FoundSounds-Today-View";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63A0CF63218F7FF300013935 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JALHNGRBQ;
+				INFOPLIST_FILE = "FoundSounds Today View/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.davidjensenius.FoundSounds.FoundSounds-Today-View";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -585,6 +1358,60 @@
 			buildConfigurations = (
 				63A0CEF2218F7F9400013935 /* Debug */,
 				63A0CEF3218F7F9400013935 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63A0CF16218F7FAD00013935 /* Build configuration list for PBXNativeTarget "FoundSounds Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63A0CF17218F7FAD00013935 /* Debug */,
+				63A0CF18218F7FAD00013935 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63A0CF1A218F7FAD00013935 /* Build configuration list for PBXNativeTarget "FoundSounds Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63A0CF1B218F7FAD00013935 /* Debug */,
+				63A0CF1C218F7FAD00013935 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63A0CF46218F7FC700013935 /* Build configuration list for PBXNativeTarget "FoundSounds TV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63A0CF47218F7FC700013935 /* Debug */,
+				63A0CF48218F7FC700013935 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63A0CF49218F7FC700013935 /* Build configuration list for PBXNativeTarget "FoundSounds TVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63A0CF4A218F7FC700013935 /* Debug */,
+				63A0CF4B218F7FC700013935 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63A0CF4C218F7FC700013935 /* Build configuration list for PBXNativeTarget "FoundSounds TVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63A0CF4D218F7FC700013935 /* Debug */,
+				63A0CF4E218F7FC700013935 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63A0CF61218F7FF300013935 /* Build configuration list for PBXNativeTarget "FoundSounds Today View" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63A0CF62218F7FF300013935 /* Debug */,
+				63A0CF63218F7FF300013935 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
