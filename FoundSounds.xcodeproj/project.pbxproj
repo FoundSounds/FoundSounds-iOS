@@ -472,6 +472,7 @@
 				63A0CF1D218F7FAD00013935 /* Embed Watch Content */,
 				63A0CF64218F7FF300013935 /* Embed App Extensions */,
 				1FD92DFEA12D4CFD3FD4B261 /* [CP] Embed Pods Frameworks */,
+				63C37BA4218F88D300DBC951 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -879,6 +880,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoundSounds TV/Pods-FoundSounds TV-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		63C37BA4218F88D300DBC951 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		677DC65C8638B3A195277155 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
