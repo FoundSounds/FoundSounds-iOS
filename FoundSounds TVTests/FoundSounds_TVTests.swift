@@ -9,7 +9,9 @@
 import XCTest
 @testable import FoundSounds_TV
 
-class FoundSoundsTVTests: XCTestCase {
+// swiftlint:disable type_name
+class FoundSounds_TVTests: XCTestCase {
+//swiftlint:enable type_name
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
