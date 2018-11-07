@@ -11,6 +11,12 @@
 		1EC6E89E3964C8A7BA9F0033 /* Pods_FoundSoundsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3543FA1D2A3C933F2A677F4 /* Pods_FoundSoundsUITests.framework */; };
 		24BCDF79D4F56076E8FCAF91 /* Pods_FoundSounds_Today_View.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3637C4F8695BE436F32B83 /* Pods_FoundSounds_Today_View.framework */; };
 		32BFF2B6723084012B3E223F /* Pods_FoundSounds_TV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ED13684F29E0867FF6E69C4 /* Pods_FoundSounds_TV.framework */; };
+		630C6A2521938E89000366AB /* FoundSoundArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630C6A2321938E89000366AB /* FoundSoundArray.swift */; };
+		630C6A2621938E89000366AB /* FoundSoundArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630C6A2321938E89000366AB /* FoundSoundArray.swift */; };
+		630C6A2721938E89000366AB /* FoundSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630C6A2421938E89000366AB /* FoundSound.swift */; };
+		630C6A2821938E89000366AB /* FoundSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630C6A2421938E89000366AB /* FoundSound.swift */; };
+		630C6A2A2193908B000366AB /* UIColor+FoundSounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630C6A292193908B000366AB /* UIColor+FoundSounds.swift */; };
+		630C6A2B2193908B000366AB /* UIColor+FoundSounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630C6A292193908B000366AB /* UIColor+FoundSounds.swift */; };
 		63A0CEC5218F7F9300013935 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0CEC4218F7F9300013935 /* AppDelegate.swift */; };
 		63A0CEC7218F7F9300013935 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0CEC6218F7F9300013935 /* FirstViewController.swift */; };
 		63A0CEC9218F7F9300013935 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0CEC8218F7F9300013935 /* SecondViewController.swift */; };
@@ -149,6 +155,9 @@
 		5B24B5A6C871AA09D17872A5 /* Pods-FoundSoundsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoundSoundsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoundSoundsUITests/Pods-FoundSoundsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		612837542023A9184A3C90BC /* Pods-FoundSounds TVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoundSounds TVTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoundSounds TVTests/Pods-FoundSounds TVTests.release.xcconfig"; sourceTree = "<group>"; };
 		61672E9733BF3CEA716AB4DA /* Pods-FoundSounds Watch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoundSounds Watch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoundSounds Watch/Pods-FoundSounds Watch.debug.xcconfig"; sourceTree = "<group>"; };
+		630C6A2321938E89000366AB /* FoundSoundArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundSoundArray.swift; sourceTree = "<group>"; };
+		630C6A2421938E89000366AB /* FoundSound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundSound.swift; sourceTree = "<group>"; };
+		630C6A292193908B000366AB /* UIColor+FoundSounds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+FoundSounds.swift"; sourceTree = "<group>"; };
 		63A0CEC1218F7F9300013935 /* FoundSounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoundSounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A0CEC4218F7F9300013935 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63A0CEC6218F7F9300013935 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -350,6 +359,9 @@
 				63A0CEC4218F7F9300013935 /* AppDelegate.swift */,
 				63A0CEC6218F7F9300013935 /* FirstViewController.swift */,
 				63A0CEC8218F7F9300013935 /* SecondViewController.swift */,
+				630C6A2421938E89000366AB /* FoundSound.swift */,
+				630C6A2321938E89000366AB /* FoundSoundArray.swift */,
+				630C6A292193908B000366AB /* UIColor+FoundSounds.swift */,
 				63A0CECA218F7F9300013935 /* Main.storyboard */,
 				63A0CECD218F7F9400013935 /* Assets.xcassets */,
 				63A0CECF218F7F9400013935 /* LaunchScreen.storyboard */,
@@ -1085,8 +1097,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				630C6A2521938E89000366AB /* FoundSoundArray.swift in Sources */,
+				630C6A2721938E89000366AB /* FoundSound.swift in Sources */,
 				63A0CEC9218F7F9300013935 /* SecondViewController.swift in Sources */,
 				63A0CEC5218F7F9300013935 /* AppDelegate.swift in Sources */,
+				630C6A2A2193908B000366AB /* UIColor+FoundSounds.swift in Sources */,
 				63A0CEC7218F7F9300013935 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1095,6 +1110,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				630C6A2B2193908B000366AB /* UIColor+FoundSounds.swift in Sources */,
+				630C6A2621938E89000366AB /* FoundSoundArray.swift in Sources */,
+				630C6A2821938E89000366AB /* FoundSound.swift in Sources */,
 				63A0CEDC218F7F9400013935 /* FoundSoundsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
