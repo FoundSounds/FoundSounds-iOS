@@ -553,14 +553,19 @@ class FoundSound: NSObject {
         let timeZone = TimeZone(identifier: "UTC")
         formatter.timeZone = timeZone
         timestamp = formatter.date(from: (like.object(forKey: "timestamp") as? String)!)!
-        let d2 = Date()
-        self.howLongAgo = self.timeIntervalWithStartDate(self.timestamp, secondDate: d2) as String
+        let secondDate = Date()
+        self.howLongAgo = self.timeIntervalWithStartDate(self.timestamp, secondDate: secondDate) as String
         if locationString != "" {
             self.timeandplaceText = """
-            \(self.timeDescriptionIntervalWithStartDate(self.timestamp, secondDate: d2)) ago in \(locationString)
+            \(self.timeDescriptionIntervalWithStartDate(
+                self.timestamp,
+                secondDate: secondDate
+            )) ago in \(locationString)
             """
         } else {
-            self.timeandplaceText = "\(self.timeDescriptionIntervalWithStartDate(self.timestamp, secondDate: d2)) ago"
+            self.timeandplaceText = """
+                \(self.timeDescriptionIntervalWithStartDate(self.timestamp, secondDate: secondDate)) ago
+            """
         }
     }
 
