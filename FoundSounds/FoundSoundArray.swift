@@ -13,7 +13,7 @@ import Foundation
 #endif
 
 protocol FoundSoundArrayDelegate: class {
-    func finishedLoadingSoundArray(_ foundSounds: [AnyObject]!)
+    func finishedLoadingSoundArray(_ foundSounds: [FoundSound]!)
 }
 
 class FoundSoundArray: NSObject {
@@ -187,7 +187,7 @@ class FoundSoundArray: NSObject {
                         )
                         self.FSArray.add(foundSound)
                     }
-                    self.delegate?.finishedLoadingSoundArray(self.FSArray as [AnyObject])
+                    self.delegate?.finishedLoadingSoundArray(self.FSArray as? [FoundSound])
 
                 } catch {
                     print("Well, shit (initFoundSoundCache) again, another error 5")
@@ -218,7 +218,7 @@ class FoundSoundArray: NSObject {
 
             if error != nil && cacheBackup == true {
                 self.getCacheStream()
-                self.delegate?.finishedLoadingSoundArray(self.FSArray as [AnyObject])
+                self.delegate?.finishedLoadingSoundArray(self.FSArray as? [FoundSound])
             } else if error != nil {
                 print("Error loading array")
             } else {
@@ -240,7 +240,7 @@ class FoundSoundArray: NSObject {
                         let foundSound = FoundSound(soundDictionary: (sound as? [NSObject: AnyObject])! as NSDictionary)
                         self.FSArray.add(foundSound)
                     }
-                    self.delegate?.finishedLoadingSoundArray(self.FSArray as [AnyObject])
+                    self.delegate?.finishedLoadingSoundArray(self.FSArray as? [FoundSound])
                 }
             }
         }).resume()

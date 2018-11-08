@@ -17,6 +17,7 @@
 		630C6A2821938E89000366AB /* FoundSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630C6A2421938E89000366AB /* FoundSound.swift */; };
 		630C6A2A2193908B000366AB /* UIColor+FoundSounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630C6A292193908B000366AB /* UIColor+FoundSounds.swift */; };
 		630C6A2B2193908B000366AB /* UIColor+FoundSounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630C6A292193908B000366AB /* UIColor+FoundSounds.swift */; };
+		630C6A2D2194E152000366AB /* recent.json in Resources */ = {isa = PBXBuildFile; fileRef = 630C6A2C2194E152000366AB /* recent.json */; };
 		63A0CEC5218F7F9300013935 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0CEC4218F7F9300013935 /* AppDelegate.swift */; };
 		63A0CEC7218F7F9300013935 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0CEC6218F7F9300013935 /* FirstViewController.swift */; };
 		63A0CEC9218F7F9300013935 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0CEC8218F7F9300013935 /* SecondViewController.swift */; };
@@ -158,6 +159,7 @@
 		630C6A2321938E89000366AB /* FoundSoundArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundSoundArray.swift; sourceTree = "<group>"; };
 		630C6A2421938E89000366AB /* FoundSound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundSound.swift; sourceTree = "<group>"; };
 		630C6A292193908B000366AB /* UIColor+FoundSounds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+FoundSounds.swift"; sourceTree = "<group>"; };
+		630C6A2C2194E152000366AB /* recent.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recent.json; sourceTree = "<group>"; };
 		63A0CEC1218F7F9300013935 /* FoundSounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoundSounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A0CEC4218F7F9300013935 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63A0CEC6218F7F9300013935 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -366,6 +368,7 @@
 				63A0CECD218F7F9400013935 /* Assets.xcassets */,
 				63A0CECF218F7F9400013935 /* LaunchScreen.storyboard */,
 				63A0CED2218F7F9400013935 /* Info.plist */,
+				630C6A2C2194E152000366AB /* recent.json */,
 			);
 			path = FoundSounds;
 			sourceTree = "<group>";
@@ -732,6 +735,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				630C6A2D2194E152000366AB /* recent.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -806,7 +810,9 @@
 				"${BUILT_PRODUCTS_DIR}/DeviceGuru-iOS/DeviceGuru.framework",
 				"${BUILT_PRODUCTS_DIR}/KMPlaceholderTextView/KMPlaceholderTextView.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainSwift-iOS/KeychainSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Mockingjay/Mockingjay.framework",
 				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift-iOS/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/URITemplate/URITemplate.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -816,7 +822,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeviceGuru.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KMPlaceholderTextView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mockingjay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/URITemplate.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
