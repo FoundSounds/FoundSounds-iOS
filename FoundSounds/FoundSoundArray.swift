@@ -29,14 +29,14 @@ class FoundSoundArray: NSObject {
     override init() {
         super.init()
     }
+
     /**
     Update an array of found sounds.
         
     @params Stream: favorites, mysounds, soundStream
     @note Use with finishedLoadingSoundArray delegate
     */
-    func updateStream(_ content: NSString) {
-        print("Going to update stream")
+    func updateStream(_ content: String) {
         var requestURL = "https://foundsounds.me/stream/api"
         streamType = content as String
         if content == "favorites" {
@@ -62,7 +62,7 @@ class FoundSoundArray: NSObject {
      @params Stream favorites, mysounds, soundStream
      @note Use with finishedLoadingSoundArray delegate
      */
-    init(stream: NSString) {
+    init(stream: String) {
         super.init()
         self.updateStream(stream)
     }
@@ -73,7 +73,7 @@ class FoundSoundArray: NSObject {
      @params soundsByUser, favoritesByUser, favoritedByUser
      @note Use with finishedLoadingSoundArray delegate
      */
-    init(stream: NSString, user: NSInteger) {
+    init(stream: String, user: NSInteger) {
         super.init()
         userID = user
         self.updateStream(stream)
@@ -159,7 +159,7 @@ class FoundSoundArray: NSObject {
      Pull an array of sounds from local cache
      @params Stream: favorites, mysounds, soundStream
      */
-    init(cache: NSString) {
+    init(cache: String, cacheDelegate: FoundSoundArrayDelegate) {
         super.init()
         let type = cache
 
@@ -187,8 +187,6 @@ class FoundSoundArray: NSObject {
                         )
                         self.FSArray.add(foundSound)
                     }
-                    self.delegate?.finishedLoadingSoundArray(self.FSArray as? [FoundSound])
-
                 } catch {
                     print("Well, shit (initFoundSoundCache) again, another error 5")
                 }
@@ -196,6 +194,7 @@ class FoundSoundArray: NSObject {
         } else {
             print("Cache not found...")
         }
+        cacheDelegate.finishedLoadingSoundArray(self.FSArray as? [FoundSound])
     }
 
     fileprivate func fetchFSArray(_ url: URL, post: String?, cacheBackup: Bool, streamType: String?) {
@@ -246,7 +245,7 @@ class FoundSoundArray: NSObject {
         }).resume()
     }
 
-    fileprivate func getCacheStream() {
+    internal func getCacheStream() {
         var returnData: Data?
         if self.streamType == "default" {
             returnData = try? Data(contentsOf: URL(
@@ -271,7 +270,7 @@ class FoundSoundArray: NSObject {
         }
     }
 
-    fileprivate func writeCacheData(_ returnData: Data?) {
+    internal func writeCacheData(_ returnData: Data?) {
         if self.streamType == "default" {
             let writeDir = URL(fileURLWithPath: "\(self.cacheStreamDirectoryName())stream-data")
             do {
@@ -301,6 +300,7 @@ class FoundSoundArray: NSObject {
         } catch {
             print(error)
         }
+        print(finalDirectoryName)
         return finalDirectoryName
     }
 }

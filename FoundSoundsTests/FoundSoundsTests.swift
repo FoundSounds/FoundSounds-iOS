@@ -10,13 +10,6 @@ import XCTest
 import Mockingjay
 @testable import FoundSounds
 
-class FoundSoundsArrayAPIConsumerMock: FoundSoundArrayDelegate {
-    var didRetrieveFoundSoundArrayClosure: (([FoundSound]) -> Void)?
-    func finishedLoadingSoundArray(_ sounds: [FoundSound]!) {
-        didRetrieveFoundSoundArrayClosure!(sounds)
-    }
-}
-
 class FoundSoundInitSoundIDAPIConsumerMock: FoundSoundDelegate {
     var didFoundSoundInitSoundIDClosure: ((FoundSound) -> Void)?
     func finishedLoadingSound(_ sound: FoundSound) {
@@ -49,26 +42,6 @@ class FoundSoundsTests: XCTestCase {
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testLoadingPublicRecentSounds() {
-        let url = Bundle(for: type(of: self)).url(forResource: "recent", withExtension: "json")!
-        var data = Data()
-        do {
-            data = try Data(contentsOf: url)
-        } catch {
-            print("Cannot find contents of \(url)")
-        }
-        stub(uri("/api/recent"), jsonData(data))
-        let foundSoundArrayExpectation = expectation(description: "Get public sounds to load")
-        let consumer = FoundSoundsArrayAPIConsumerMock()
-        let currentSounds = FoundSoundArray(stream: "recentPublic")
-        currentSounds.delegate = consumer
-        consumer.didRetrieveFoundSoundArrayClosure = { sounds in
-            XCTAssertEqual(sounds.count, 2)
-            foundSoundArrayExpectation.fulfill()
-        }
-        waitForExpectations(timeout: 1.0)
     }
 
     func testFoundSoundInitSoundID() {
