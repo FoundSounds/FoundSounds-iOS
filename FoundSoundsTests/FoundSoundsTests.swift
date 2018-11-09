@@ -17,19 +17,30 @@ class FoundSoundsArrayAPIConsumerMock: FoundSoundArrayDelegate {
     }
 }
 
+class FoundSoundInitSoundIDAPIConsumerMock: FoundSoundDelegate {
+    var didFoundSoundInitSoundIDClosure: ((FoundSound) -> Void)?
+    func finishedLoadingSound(_ sound: FoundSound) {
+        didFoundSoundInitSoundIDClosure!(sound)
+    }
+
+    func finishedLoadingLikes(_ likedBy: String) {
+    }
+
+    func finishedRemovingSound(_ success: Bool) {
+    }
+
+    func finishedMakingSoundPrivate(_ success: Bool) {
+    }
+
+    func finishedMakingSoundPublic(_ success: Bool) {
+    }
+}
+
 class FoundSoundsTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
         super.setUp()
-        let url = Bundle(for: type(of: self)).url(forResource: "recent", withExtension: "json")!
-        var data = Data()
-        do {
-            data = try Data(contentsOf: url)
-        } catch {
-            print("Cannot find contents of \(url)")
-        }
-        stub(uri("/api/recent"), jsonData(data))
     }
 
     func matcher(request: NSURLRequest) -> Bool {
@@ -41,7 +52,15 @@ class FoundSoundsTests: XCTestCase {
     }
 
     func testLoadingPublicRecentSounds() {
-        let foundSoundArrayExpectation = expectation(description: "beep boop")
+        let url = Bundle(for: type(of: self)).url(forResource: "recent", withExtension: "json")!
+        var data = Data()
+        do {
+            data = try Data(contentsOf: url)
+        } catch {
+            print("Cannot find contents of \(url)")
+        }
+        stub(uri("/api/recent"), jsonData(data))
+        let foundSoundArrayExpectation = expectation(description: "Get public sounds to load")
         let consumer = FoundSoundsArrayAPIConsumerMock()
         let currentSounds = FoundSoundArray(stream: "recentPublic")
         currentSounds.delegate = consumer
@@ -52,9 +71,24 @@ class FoundSoundsTests: XCTestCase {
         waitForExpectations(timeout: 1.0)
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testFoundSoundInitSoundID() {
+        let url = Bundle(for: type(of: self)).url(forResource: "sound", withExtension: "json")!
+        var data = Data()
+        do {
+            data = try Data(contentsOf: url)
+        } catch {
+            print("Cannot find contents of \(url)")
+        }
+        stub(uri("/iosuser/getsound"), jsonData(data))
+        let foundSoundExpectation = expectation(description: "Load sound for user")
+        let consumer = FoundSoundInitSoundIDAPIConsumerMock()
+        let sound = FoundSound(soundID: 1)
+        sound.delegate = consumer
+        consumer.didFoundSoundInitSoundIDClosure = { sound in
+            XCTAssertEqual(sound.country, "Japan")
+            foundSoundExpectation.fulfill()
+        }
+        waitForExpectations(timeout: 1.0)
     }
 
     func testPerformanceExample() {

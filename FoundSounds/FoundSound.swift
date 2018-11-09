@@ -17,7 +17,7 @@ protocol FoundSoundDelegate: class {
      
      @returns FoundSound id
      */
-    func finishedLoadingSound(_ foundSound: AnyObject)
+    func finishedLoadingSound(_ foundSound: FoundSound)
 
     /**
      Delegate called after loading likes for a sound
@@ -50,7 +50,7 @@ protocol FoundSoundDelegate: class {
 
 extension FoundSoundDelegate {
     // Make swift optional stuff
-    func finishedLoadingSound(_ foundSound: AnyObject) { }
+    func finishedLoadingSound(_ foundSound: FoundSound) { }
     func finishedLoadingLikes(_ likedBy: String) { }
     func finishedRemovingSound(_ success: Bool) { }
     func finishedMakingSoundPrivate(_ success: Bool) { }
