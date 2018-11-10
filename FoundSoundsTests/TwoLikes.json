@@ -1,0 +1,13 @@
+[
+  {
+    "username": "TestUser",
+    "fullname": "Test User",
+    "userID": 1
+  },
+  {
+    "username": "TestUser2",
+    "fullname": "Test User 2",
+    "userID": 2
+  }
+
+]

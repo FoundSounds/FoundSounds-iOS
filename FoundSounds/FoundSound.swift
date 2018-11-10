@@ -576,7 +576,7 @@ class FoundSound: NSObject {
 
         for name in names {
             if firstLetter != "" {
-                if name.characters.count > 0 {
+                if !name.isEmpty {
                     secondLetter = String(name[name.startIndex])
                 }
             } else {

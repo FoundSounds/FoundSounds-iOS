@@ -20,6 +20,9 @@
 		630C6A2D2194E152000366AB /* recent.json in Resources */ = {isa = PBXBuildFile; fileRef = 630C6A2C2194E152000366AB /* recent.json */; };
 		630C6A2F21950C18000366AB /* sound.json in Resources */ = {isa = PBXBuildFile; fileRef = 630C6A2E21950C18000366AB /* sound.json */; };
 		630C6A312195F4A2000366AB /* FoundSoundArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630C6A302195F4A2000366AB /* FoundSoundArrayTests.swift */; };
+		630C6A3421974AE0000366AB /* OneLike.json in Resources */ = {isa = PBXBuildFile; fileRef = 630C6A3221974ADF000366AB /* OneLike.json */; };
+		630C6A3521974AE0000366AB /* TwoLikes.json in Resources */ = {isa = PBXBuildFile; fileRef = 630C6A3321974ADF000366AB /* TwoLikes.json */; };
+		630C6A3721976F5A000366AB /* ColorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630C6A3621976F5A000366AB /* ColorTest.swift */; };
 		63A0CEC5218F7F9300013935 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0CEC4218F7F9300013935 /* AppDelegate.swift */; };
 		63A0CEC7218F7F9300013935 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0CEC6218F7F9300013935 /* FirstViewController.swift */; };
 		63A0CEC9218F7F9300013935 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0CEC8218F7F9300013935 /* SecondViewController.swift */; };
@@ -164,6 +167,9 @@
 		630C6A2C2194E152000366AB /* recent.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recent.json; sourceTree = "<group>"; };
 		630C6A2E21950C18000366AB /* sound.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sound.json; sourceTree = "<group>"; };
 		630C6A302195F4A2000366AB /* FoundSoundArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundSoundArrayTests.swift; sourceTree = "<group>"; };
+		630C6A3221974ADF000366AB /* OneLike.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OneLike.json; sourceTree = "<group>"; };
+		630C6A3321974ADF000366AB /* TwoLikes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TwoLikes.json; sourceTree = "<group>"; };
+		630C6A3621976F5A000366AB /* ColorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTest.swift; sourceTree = "<group>"; };
 		63A0CEC1218F7F9300013935 /* FoundSounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoundSounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A0CEC4218F7F9300013935 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63A0CEC6218F7F9300013935 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -380,9 +386,12 @@
 			isa = PBXGroup;
 			children = (
 				63A0CEDB218F7F9400013935 /* FoundSoundsTests.swift */,
+				630C6A3621976F5A000366AB /* ColorTest.swift */,
 				630C6A302195F4A2000366AB /* FoundSoundArrayTests.swift */,
 				630C6A2E21950C18000366AB /* sound.json */,
 				630C6A2C2194E152000366AB /* recent.json */,
+				630C6A3221974ADF000366AB /* OneLike.json */,
+				630C6A3321974ADF000366AB /* TwoLikes.json */,
 				63A0CEDD218F7F9400013935 /* Info.plist */,
 			);
 			path = FoundSoundsTests;
@@ -743,6 +752,8 @@
 			files = (
 				630C6A2D2194E152000366AB /* recent.json in Resources */,
 				630C6A2F21950C18000366AB /* sound.json in Resources */,
+				630C6A3421974AE0000366AB /* OneLike.json in Resources */,
+				630C6A3521974AE0000366AB /* TwoLikes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1126,6 +1137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				630C6A2B2193908B000366AB /* UIColor+FoundSounds.swift in Sources */,
+				630C6A3721976F5A000366AB /* ColorTest.swift in Sources */,
 				630C6A2621938E89000366AB /* FoundSoundArray.swift in Sources */,
 				630C6A312195F4A2000366AB /* FoundSoundArrayTests.swift in Sources */,
 				630C6A2821938E89000366AB /* FoundSound.swift in Sources */,
