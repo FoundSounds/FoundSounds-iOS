@@ -1,0 +1,11 @@
+#! /usr/bin/perl -w
+
+use strict;
+use Getopt::Long qw(:config pass_through);
+
+my $profile_coverage_mapping;
+GetOptions("profile-coverage-mapping" => \$profile_coverage_mapping);
+
+exec(
+    "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+    @ARGV);

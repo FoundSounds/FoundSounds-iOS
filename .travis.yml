@@ -4,5 +4,6 @@ language: swift
 xcode_workspace: FoundSounds.xcworkspace # path to your xcodeproj folder
 xcode_scheme: FoundSounds
 xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
+before_script: cp SWIFT_EXEC-no-coverage Pods/
 after_success:
   - bash <(curl -s https://codecov.io/bash)

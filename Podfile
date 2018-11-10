@@ -31,10 +31,6 @@ target 'FoundSounds Today View' do
   platform :ios, '12.1'
 
   # Pods for FoundSounds Today View
-  pod 'Alamofire', '~> 4.7.3'
-  pod 'SwiftLint', '~> 0.27.0'
-  pod 'DeviceGuru', '~> 5.0.0'
-  pod 'ReachabilitySwift', '~> 4.3.0'
 end
 
 target 'FoundSounds TV' do
@@ -77,4 +73,13 @@ target 'FoundSounds Watch Extension' do
   pod 'Alamofire', '~> 4.7.3'
   pod 'SwiftLint', '~> 0.27.0'
   pod 'DeviceGuru', '~> 5.0.0'
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |configuration|
+      configuration.build_settings['CLANG_ENABLE_CODE_COVERAGE'] = 'NO'
+      configuration.build_settings['SWIFT_EXEC'] = '$(SRCROOT)/SWIFT_EXEC-no-coverage'
+    end
+  end
 end
