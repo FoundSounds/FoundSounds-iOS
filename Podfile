@@ -4,12 +4,14 @@
 target 'FoundSounds' do
   use_frameworks!
   platform :ios, '12.1'
+  inhibit_all_warnings!
   pod 'KeychainSwift', '~> 13.0'
   pod 'Alamofire', '~> 4.7.3'
   pod 'ReachabilitySwift', '~> 4.3.0'
   pod 'KMPlaceholderTextView', '~> 1.4.0'
   pod 'SwiftLint', '~> 0.27.0'
   pod 'DeviceGuru', '~> 5.0.0'
+  pod 'Mockingjay', '~> 2.0.1'
 
   # Pods for FoundSounds
 
