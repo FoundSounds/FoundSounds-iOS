@@ -57,6 +57,29 @@ extension FoundSoundDelegate {
     func finishedMakingSoundPublic(_ success: Bool) { }
 }
 
+protocol Mappable: Codable {
+    init?(jsonString: String)
+}
+extension Mappable {
+    init?(jsonString: String) {
+        guard let data = jsonString.data(using: .utf8) else {
+            return nil
+        }
+        do {
+            self = try JSONDecoder().decode(Self.self, from: data)
+        } catch {
+            print(error)
+            return nil
+        }
+    }
+}
+
+struct Sound: Mappable {
+    var city: String
+    var country: String?
+    var soundDescription: String?
+}
+
 class FoundSound: NSObject {
     weak var delegate: FoundSoundDelegate?
     var city = String()
@@ -87,12 +110,13 @@ class FoundSound: NSObject {
     var initials = String()
     var timeandplaceText = String()
     var shareURL = String()
-
     let SECOND: Double = 1
     let MINUTE: Double = 60
     let HOUR: Double = 3600
     let DAY: Double = 86400
     let MONTH: Double = 86400 * 30
+
+    var sound: Sound?
 
     override init() {
         super.init()
@@ -132,6 +156,16 @@ class FoundSound: NSObject {
                 self.setAllValues(like)
             }
 
+            for like in (json as? [NSDictionary])! {
+                var blah = Data()
+                do {
+                    blah = try JSONSerialization.data(withJSONObject: like, options: [])
+                } catch {
+                   print(error)
+                }
+
+                self.sound = Sound(jsonString: String(data: blah, encoding: .utf8)!)
+            }
             self.delegate?.finishedLoadingSound(self)
         }).resume()
     }
