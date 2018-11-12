@@ -1,0 +1,11 @@
+query Example{
+    sound(id: 5){
+        id,
+        latitude,
+        longitude,
+        user {
+            id,
+            email
+        }
+    }
+}
