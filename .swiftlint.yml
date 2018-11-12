@@ -5,3 +5,4 @@ disabled_rules:
 excluded: # paths to ignore during linting. Takes precedence over `included`.
   - Carthage
   - Pods
+  - FoundSounds/API.swift
