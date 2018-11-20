@@ -69,6 +69,16 @@
             value = "MockNetworkTransport"
             isEnabled = "YES">
          </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "AUTH_TOKEN"
+            value = "foundsounds"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "FS_DOMAIN"
+            value = "https://dfj.ngrok.io"
+            isEnabled = "YES">
+         </EnvironmentVariable>
       </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
@@ -97,6 +107,16 @@
          <EnvironmentVariable
             key = "NetworkTransport"
             value = "NetworkTransport"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "AUTH_TOKEN"
+            value = "foundsounds"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "FS_DOMAIN"
+            value = "https://dfj.ngrok.io"
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>
