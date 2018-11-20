@@ -61,6 +61,9 @@
 		63B97366219915310007DDBD /* MockNetworkTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B97365219915310007DDBD /* MockNetworkTransport.swift */; };
 		63B973682199167D0007DDBD /* GraphQLExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B973672199167D0007DDBD /* GraphQLExample.swift */; };
 		63B973692199167E0007DDBD /* GraphQLExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B973672199167D0007DDBD /* GraphQLExample.swift */; };
+		63E1338C21A314F40080C6B9 /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E1338B21A314F40080C6B9 /* CurrentUser.swift */; };
+		63E1338D21A314F40080C6B9 /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E1338B21A314F40080C6B9 /* CurrentUser.swift */; };
+		63E1338F21A315400080C6B9 /* CurrentUserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E1338E21A315400080C6B9 /* CurrentUserTest.swift */; };
 		8B5C83E820051104E24C04A6 /* Pods_FoundSounds_Watch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB5FBC9FDE74DD67615B97CE /* Pods_FoundSounds_Watch_Extension.framework */; };
 		8CD6281D0839D8C833172AF6 /* Pods_FoundSounds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3105CAB5912EFD78610807AF /* Pods_FoundSounds.framework */; };
 		AD5ADAA280B81B0EEB6FB9C6 /* Pods_FoundSounds_Watch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7729E1B239A77E0028702A3E /* Pods_FoundSounds_Watch.framework */; };
@@ -230,6 +233,8 @@
 		63B9735F219909F90007DDBD /* Example-Query.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Example-Query.graphql"; sourceTree = "<group>"; };
 		63B97365219915310007DDBD /* MockNetworkTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkTransport.swift; sourceTree = "<group>"; };
 		63B973672199167D0007DDBD /* GraphQLExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLExample.swift; sourceTree = "<group>"; };
+		63E1338B21A314F40080C6B9 /* CurrentUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
+		63E1338E21A315400080C6B9 /* CurrentUserTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserTest.swift; sourceTree = "<group>"; };
 		7729E1B239A77E0028702A3E /* Pods_FoundSounds_Watch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoundSounds_Watch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A115A536509165CD0587FC /* Pods-FoundSounds TV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoundSounds TV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoundSounds TV/Pods-FoundSounds TV.debug.xcconfig"; sourceTree = "<group>"; };
 		8D9EB0466ED089B97831175A /* Pods-FoundSounds Today View.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoundSounds Today View.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoundSounds Today View/Pods-FoundSounds Today View.release.xcconfig"; sourceTree = "<group>"; };
@@ -390,6 +395,7 @@
 				630C6A2421938E89000366AB /* FoundSound.swift */,
 				630C6A2321938E89000366AB /* FoundSoundArray.swift */,
 				630C6A292193908B000366AB /* UIColor+FoundSounds.swift */,
+				63E1338B21A314F40080C6B9 /* CurrentUser.swift */,
 				63A0CECA218F7F9300013935 /* Main.storyboard */,
 				63A0CECD218F7F9400013935 /* Assets.xcassets */,
 				63A0CECF218F7F9400013935 /* LaunchScreen.storyboard */,
@@ -407,6 +413,7 @@
 			children = (
 				63A0CEDB218F7F9400013935 /* FoundSoundsTests.swift */,
 				630C6A3621976F5A000366AB /* ColorTest.swift */,
+				63E1338E21A315400080C6B9 /* CurrentUserTest.swift */,
 				633845882199D91F0090AA48 /* GraphQLExampleTest.swift */,
 				63B97365219915310007DDBD /* MockNetworkTransport.swift */,
 				630C6A302195F4A2000366AB /* FoundSoundArrayTests.swift */,
@@ -982,7 +989,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nAPOLLO_FRAMEWORK_PATH=\"$(eval find $FRAMEWORK_SEARCH_PATHS -name \"Apollo.framework\" -maxdepth 1)\"\n\nif [ -z \"$APOLLO_FRAMEWORK_PATH\" ]; then\necho \"error: Couldn't find Apollo.framework in FRAMEWORK_SEARCH_PATHS; make sure to add the framework to your project.\"\nexit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n$APOLLO_FRAMEWORK_PATH/check-and-run-apollo-cli.sh codegen:generate --queries=\"$(find . -name '*.graphql')\" --schema=schema.json API.swift\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Custom environment varibales\n#check if env-vars.sh exists\nif [ -f ./env-vars.sh ]\nthen\nsource ./env-vars.sh\nfi\n\n# Apollo GraphQL framework\nAPOLLO_FRAMEWORK_PATH=\"$(eval find $FRAMEWORK_SEARCH_PATHS -name \"Apollo.framework\" -maxdepth 1)\"\n\nif [ -z \"$APOLLO_FRAMEWORK_PATH\" ]; then\necho \"error: Couldn't find Apollo.framework in FRAMEWORK_SEARCH_PATHS; make sure to add the framework to your project.\"\nexit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n$APOLLO_FRAMEWORK_PATH/check-and-run-apollo-cli.sh codegen:generate --queries=\"$(find . -name '*.graphql')\" --schema=schema.json API.swift\n";
 		};
 		63C37BA4218F88D300DBC951 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1193,6 +1200,7 @@
 				63B973682199167D0007DDBD /* GraphQLExample.swift in Sources */,
 				63A0CEC9218F7F9300013935 /* SecondViewController.swift in Sources */,
 				63A0CEC5218F7F9300013935 /* AppDelegate.swift in Sources */,
+				63E1338C21A314F40080C6B9 /* CurrentUser.swift in Sources */,
 				630C6A2A2193908B000366AB /* UIColor+FoundSounds.swift in Sources */,
 				63A0CEC7218F7F9300013935 /* FirstViewController.swift in Sources */,
 				637098D6219908D500287E19 /* API.swift in Sources */,
@@ -1207,12 +1215,14 @@
 				630C6A3721976F5A000366AB /* ColorTest.swift in Sources */,
 				630C6A2621938E89000366AB /* FoundSoundArray.swift in Sources */,
 				630C6A312195F4A2000366AB /* FoundSoundArrayTests.swift in Sources */,
+				63E1338F21A315400080C6B9 /* CurrentUserTest.swift in Sources */,
 				633845892199D91F0090AA48 /* GraphQLExampleTest.swift in Sources */,
 				63B973692199167E0007DDBD /* GraphQLExample.swift in Sources */,
 				630C6A2821938E89000366AB /* FoundSound.swift in Sources */,
 				63A0CEDC218F7F9400013935 /* FoundSoundsTests.swift in Sources */,
 				63B97366219915310007DDBD /* MockNetworkTransport.swift in Sources */,
 				637098D7219908D500287E19 /* API.swift in Sources */,
+				63E1338D21A314F40080C6B9 /* CurrentUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
