@@ -30,9 +30,10 @@ class CurrentUser: NSObject {
     var userID: Int?
     var email: String?
     var portrait: String?
-    var currentlyLoggedIn: Bool?
+    var currentlyLoggedIn: Bool
 
     override init() {
+        self.currentlyLoggedIn = false
         super.init()
     }
 

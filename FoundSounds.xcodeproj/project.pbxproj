@@ -29,7 +29,7 @@
 		637098D6219908D500287E19 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637098D5219908D500287E19 /* API.swift */; };
 		637098D7219908D500287E19 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637098D5219908D500287E19 /* API.swift */; };
 		63A0CEC5218F7F9300013935 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0CEC4218F7F9300013935 /* AppDelegate.swift */; };
-		63A0CEC7218F7F9300013935 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0CEC6218F7F9300013935 /* FirstViewController.swift */; };
+		63A0CEC7218F7F9300013935 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0CEC6218F7F9300013935 /* SetupViewController.swift */; };
 		63A0CEC9218F7F9300013935 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0CEC8218F7F9300013935 /* SecondViewController.swift */; };
 		63A0CECC218F7F9300013935 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A0CECA218F7F9300013935 /* Main.storyboard */; };
 		63A0CECE218F7F9400013935 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63A0CECD218F7F9400013935 /* Assets.xcassets */; };
@@ -188,7 +188,7 @@
 		637098D5219908D500287E19 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		63A0CEC1218F7F9300013935 /* FoundSounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoundSounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A0CEC4218F7F9300013935 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		63A0CEC6218F7F9300013935 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		63A0CEC6218F7F9300013935 /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
 		63A0CEC8218F7F9300013935 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		63A0CECB218F7F9300013935 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63A0CECD218F7F9400013935 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -390,7 +390,7 @@
 			isa = PBXGroup;
 			children = (
 				63A0CEC4218F7F9300013935 /* AppDelegate.swift */,
-				63A0CEC6218F7F9300013935 /* FirstViewController.swift */,
+				63A0CEC6218F7F9300013935 /* SetupViewController.swift */,
 				63A0CEC8218F7F9300013935 /* SecondViewController.swift */,
 				630C6A2421938E89000366AB /* FoundSound.swift */,
 				630C6A2321938E89000366AB /* FoundSoundArray.swift */,
@@ -1202,7 +1202,7 @@
 				63A0CEC5218F7F9300013935 /* AppDelegate.swift in Sources */,
 				63E1338C21A314F40080C6B9 /* CurrentUser.swift in Sources */,
 				630C6A2A2193908B000366AB /* UIColor+FoundSounds.swift in Sources */,
-				63A0CEC7218F7F9300013935 /* FirstViewController.swift in Sources */,
+				63A0CEC7218F7F9300013935 /* SetupViewController.swift in Sources */,
 				637098D6219908D500287E19 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
