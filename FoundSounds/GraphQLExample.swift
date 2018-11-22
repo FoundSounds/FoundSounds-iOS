@@ -12,12 +12,10 @@ import Apollo
 class GraphQLExample {
     func getExampleQuery(
         networkTransport: NetworkTransport = HTTPNetworkTransport(
-            url: URL(string: "https://645547e3.ngrok.io/graphql")!
-        ),
+        url: URL(string: "\(ProcessInfo.processInfo.environment["FS_DOMAIN"] ?? "")/graphql")!
+    ),
         closure: @escaping (_ sound: ExampleQuery.Data) -> Void) {
-
         let apollo = ApolloClient(networkTransport: networkTransport)
-
         apollo.fetch(query: ExampleQuery()) { (result, error) in
             guard let data = result?.data else {
                 print("Could not assign data")
